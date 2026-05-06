@@ -530,7 +530,9 @@ export default function App() {
   const [isTyping, setIsTyping] = useState(false);
   const [selectedMood, setSelectedMood] = useState(null);
   const [moodSaved, setMoodSaved] = useState(false);
-  const [moodHistory, setMoodHistory] = useState([3, 4, 2, 4, 3, 5, 4]);
+  const [moodHistory, setMoodHistory] = useState([]);
+  const [aiFollowThrough, setAiFollowThrough] = useState("");
+  const [followThroughLoading, setFollowThroughLoading] = useState(false);
   const [moodNote, setMoodNote] = useState("");
   const [journalEntry, setJournalEntry] = useState("");
   const [journalPromptIdx, setJournalPromptIdx] = useState(0);
@@ -955,10 +957,52 @@ Use instead: 'incorrect belief', 'the belief that has been reached', 'the unders
     setIsTyping(false);
   };
 
-  const saveMood = () => {
+  const saveMood = async () => {
     if (!selectedMood) return;
-    setMoodHistory([...moodHistory.slice(-6), selectedMood]);
+    const em = EMOTIONS.find(e => e.score === selectedMood);
+    const sig = EMOTION_SIGNALS[selectedMood];
+    const entry = {
+      date: new Date().toLocaleDateString("en-AU", { weekday: "short", day: "numeric", month: "short" }),
+      time: new Date().toLocaleTimeString("en-AU", { hour: "2-digit", minute: "2-digit" }),
+      dayOfWeek: new Date().toLocaleDateString("en-AU", { weekday: "long" }),
+      score: selectedMood,
+      emoji: em?.emoji,
+      label: em?.label,
+      note: moodNote.trim(),
+    };
+    setMoodHistory(prev => [entry, ...prev].slice(0, 30));
     setMoodSaved(true);
+    setAiFollowThrough("");
+    setFollowThroughLoading(true);
+    try {
+      const res = await fetch("/api/chat", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          model: "claude-sonnet-4-20250514",
+          max_tokens: 500,
+          system: \`You are an AI guide for Jay's New Way — a mental health app built on the methodology that psychological stress is always caused by an incorrect belief, never by the event itself. Your role in this specific moment is to provide a personalised belief upgrade for someone who has just checked in with an emotion.
+
+The person has selected their emotion and described what their mind is concluding. You must:
+1. Acknowledge the specific belief they have described — not the event, but what their mind has concluded about it
+2. Identify what achievement model belief is running underneath (worth being threatened, need to prove something, fear of not getting what is needed)
+3. Provide the accurate understanding that upgrades this specific belief
+4. Keep it concise — 3 short paragraphs maximum
+5. Never use: choices, consequences, authentic, genuine, interfere, let go, challenge, cope, resilience, overcome, balance, manage
+6. Never address the event — always address the belief about the event
+7. End with one clear accurate statement they can hold onto
+
+Emotion: \${em?.label}
+What their mind is concluding: \${moodNote.trim() || "They did not add a note — provide a general but warm upgrade for this emotion based on what the signal typically points to."}\`,
+          messages: [{ role: "user", content: "Please provide my personalised belief upgrade." }],
+        }),
+      });
+      const data = await res.json();
+      setAiFollowThrough(data.content?.[0]?.text || "");
+    } catch {
+      setAiFollowThrough("");
+    }
+    setFollowThroughLoading(false);
   };
 
   const saveJournal = () => {
@@ -1144,21 +1188,25 @@ Use instead: 'incorrect belief', 'the belief that has been reached', 'the unders
       </div>
 
       <div style={styles.card}>
-        <div style={styles.cardTitle}>Your Progress</div>
-        <div style={{ display: "flex", alignItems: "flex-end", gap: 6, height: 50 }}>
-          {moodHistory.map((m, i) => (
-            <div key={i} style={{
-              flex: 1,
-              height: `${(m / 6) * 100}%`,
-              background: i === moodHistory.length - 1
-                ? "linear-gradient(180deg, #6aa3e8, #2a6acc)"
-                : "rgba(100,160,255,0.25)",
-              borderRadius: "4px 4px 0 0",
-              transition: "height 0.3s",
-            }} />
-          ))}
-        </div>
-        <div style={{ fontSize: 11, color: "rgba(150,180,230,0.5)", marginTop: 6, letterSpacing: "0.05em" }}>7-day emotion record</div>
+        <div style={styles.cardTitle}>Recent Emotions</div>
+        {moodHistory.length === 0 ? (
+          <p style={{ ...styles.p, fontSize: 12, color: "rgba(150,180,230,0.5)", fontStyle: "italic", marginBottom: 0 }}>No check-ins yet. Use the Emotions tab to start tracking what your signals are pointing to.</p>
+        ) : (
+          <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
+            {moodHistory.slice(0, 3).map((entry, i) => (
+              <div key={i} style={{ display: "flex", alignItems: "center", gap: 10 }}>
+                <div style={{ fontSize: 18 }}>{entry.emoji}</div>
+                <div style={{ flex: 1 }}>
+                  <div style={{ fontSize: 12, color: "#e8f0ff" }}>{entry.label}</div>
+                  <div style={{ fontSize: 10, color: "rgba(150,180,230,0.45)" }}>{entry.dayOfWeek} · {entry.time}</div>
+                </div>
+              </div>
+            ))}
+            {moodHistory.length > 3 && (
+              <div style={{ fontSize: 11, color: "rgba(106,163,232,0.6)", marginTop: 2 }}>+ {moodHistory.length - 3} more in Emotions tab</div>
+            )}
+          </div>
+        )}
       </div>
     </div>
   );
@@ -1232,26 +1280,34 @@ Use instead: 'incorrect belief', 'the belief that has been reached', 'the unders
   );
 
   const renderMood = () => {
-    if (moodSaved && selectedMood && EMOTION_SIGNALS[selectedMood]?.followThrough) {
-      const sig = EMOTION_SIGNALS[selectedMood];
-      const ft = sig.followThrough;
+    if (moodSaved && selectedMood) {
       const em = EMOTIONS.find(e => e.score === selectedMood);
+      const sig = EMOTION_SIGNALS[selectedMood];
+      const ft = sig?.followThrough;
       return (
         <div style={styles.section}>
           <div style={{ ...styles.card, borderColor: "rgba(106,163,232,0.3)", background: "linear-gradient(135deg,rgba(106,163,232,0.08),rgba(42,106,204,0.04))", marginBottom: 16 }}>
-            <div style={{ fontSize: 24, marginBottom: 8 }}>{em?.emoji}</div>
+            <div style={{ fontSize: 28, marginBottom: 8 }}>{em?.emoji}</div>
             <div style={styles.cardTitle}>{em?.label}</div>
-            <div style={{ fontSize: 17, color: "#e8f0ff", marginBottom: 0 }}>{ft.title}</div>
+            <p style={{ ...styles.p, marginBottom: 0, fontSize: 13, color: "#c8deff" }}>{sig?.signal}</p>
           </div>
-          {ft.points.map((point, i) => (
-            <div key={i} style={{ ...styles.card, marginBottom: 10, display: "flex", gap: 12, alignItems: "flex-start" }}>
-              <div style={{ width: 22, height: 22, borderRadius: "50%", background: "rgba(106,163,232,0.15)", border: "1px solid rgba(106,163,232,0.3)", display: "flex", alignItems: "center", justifyContent: "center", color: "#6aa3e8", fontSize: 11, flexShrink: 0, marginTop: 1 }}>{i + 1}</div>
-              <p style={{ ...styles.p, marginBottom: 0, fontSize: 13 }}>{point}</p>
-            </div>
-          ))}
+
+          <div style={{ ...styles.card, marginBottom: 16 }}>
+            <div style={styles.cardTitle}>Belief Upgrade</div>
+            {followThroughLoading ? (
+              <div style={{ display: "flex", gap: 6, padding: "8px 0" }}>
+                {[0,1,2].map(i => <div key={i} style={{ width: 8, height: 8, borderRadius: "50%", background: "#6aa3e8", opacity: 0.6 }} />)}
+              </div>
+            ) : aiFollowThrough ? (
+              <p style={{ ...styles.p, marginBottom: 0, whiteSpace: "pre-wrap", fontSize: 13, lineHeight: 1.8 }}>{aiFollowThrough}</p>
+            ) : (
+              <p style={{ ...styles.p, marginBottom: 0, fontSize: 13, color: "rgba(150,180,230,0.5)" }}>Something went quiet — try checking in again.</p>
+            )}
+          </div>
+
           <div style={{ display: "flex", flexDirection: "column", gap: 8, marginTop: 6 }}>
-            <button onClick={() => { setScreen(ft.action); setMoodSaved(false); setSelectedMood(null); setMoodNote(""); }} style={styles.btn}>{ft.actionLabel}</button>
-            <button onClick={() => { setMoodSaved(false); setSelectedMood(null); setMoodNote(""); }} style={{ ...styles.btn, background: "transparent", border: "1px solid rgba(106,163,232,0.3)", color: "#6aa3e8" }}>← Check in again</button>
+            {ft && <button onClick={() => { setScreen(ft.action); setMoodSaved(false); setSelectedMood(null); setMoodNote(""); setAiFollowThrough(""); }} style={styles.btn}>{ft.actionLabel}</button>}
+            <button onClick={() => { setMoodSaved(false); setSelectedMood(null); setMoodNote(""); setAiFollowThrough(""); }} style={{ ...styles.btn, background: "transparent", border: "1px solid rgba(106,163,232,0.3)", color: "#6aa3e8" }}>← Check in again</button>
           </div>
         </div>
       );
@@ -1288,22 +1344,26 @@ Use instead: 'incorrect belief', 'the belief that has been reached', 'the unders
           rows={3} style={{ ...styles.input, marginBottom: 12 }} />
         <button onClick={saveMood} style={styles.btn}>Save & Continue →</button>
 
-        <div style={{ ...styles.card, marginTop: 24 }}>
-          <div style={styles.cardTitle}>7-Day Emotion Record</div>
-          <p style={{ ...styles.p, fontSize: 12, fontStyle: "italic", marginBottom: 12 }}>A pattern here reflects the beliefs that have been running. Higher is not better — it is simply different information.</p>
-          <div style={{ display: "flex", alignItems: "flex-end", gap: 6, height: 60 }}>
-            {moodHistory.map((m, i) => (
-              <div key={i} style={{ flex: 1, display: "flex", flexDirection: "column", alignItems: "center", gap: 4 }}>
-                <div style={{ width: "100%", height: `${(m / 6) * 56}px`, background: `linear-gradient(180deg, rgba(106,163,232,${0.3 + m * 0.12}), rgba(42,106,204,${0.3 + m * 0.08}))`, borderRadius: "4px 4px 0 0" }} />
+        {moodHistory.length > 0 && (
+          <div style={{ marginTop: 24 }}>
+            <div style={{ ...styles.cardTitle, marginBottom: 4 }}>Emotion History</div>
+            <p style={{ ...styles.p, fontSize: 12, fontStyle: "italic", marginBottom: 12 }}>Patterns here reflect the beliefs that have been running. Notice if particular days or times bring up the same signals.</p>
+            {moodHistory.map((entry, i) => (
+              <div key={i} style={{ ...styles.card, marginBottom: 10 }}>
+                <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: entry.note ? 8 : 0 }}>
+                  <div style={{ fontSize: 22 }}>{entry.emoji}</div>
+                  <div style={{ flex: 1 }}>
+                    <div style={{ fontSize: 13, color: "#e8f0ff" }}>{entry.label}</div>
+                    <div style={{ fontSize: 10, color: "rgba(150,180,230,0.5)", marginTop: 2 }}>{entry.dayOfWeek} · {entry.date} · {entry.time}</div>
+                  </div>
+                </div>
+                {entry.note && (
+                  <p style={{ ...styles.p, fontSize: 12, fontStyle: "italic", color: "rgba(180,210,255,0.7)", marginBottom: 0, borderTop: "1px solid rgba(106,163,232,0.1)", paddingTop: 8 }}>{entry.note}</p>
+                )}
               </div>
             ))}
           </div>
-          <div style={{ display: "flex", justifyContent: "space-between", marginTop: 4 }}>
-            {["M", "T", "W", "T", "F", "S", "S"].map((d, i) => (
-              <div key={i} style={{ flex: 1, textAlign: "center", fontSize: 10, color: "rgba(150,180,230,0.4)" }}>{d}</div>
-            ))}
-          </div>
-        </div>
+        )}
       </div>
     );
   };
