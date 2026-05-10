@@ -1,26 +1,3 @@
-/**
- * RAG SETUP — STEP 3: UPDATED /api/chat.js PROXY
- * =================================================
- * Replace the contents of /api/chat.js in each of your three GitHub repos
- * with this file.
- *
- * What's new vs the original:
- * 1. Receives the user's message
- * 2. Embeds it using OpenAI to create a search vector
- * 3. Searches Supabase for the 5 most relevant document chunks
- * 4. Injects those chunks into the system prompt as "Source Material"
- * 5. Calls Claude with the enriched prompt
- * 6. Returns the response as normal
- *
- * The React app code is UNCHANGED — it still calls /api/chat the same way.
- *
- * NEW ENVIRONMENT VARIABLES NEEDED IN VERCEL:
- * - SUPABASE_URL        → from supabase.com → project settings → API
- * - SUPABASE_ANON_KEY   → from supabase.com → project settings → API
- * - OPENAI_API_KEY      → from platform.openai.com → API keys
- * - ANTHROPIC_API_KEY   → already set ✓
- */
-
 const { createClient } = require('@supabase/supabase-js');
 
 // ─── CONFIG ────────────────────────────────────────────────────────────────
