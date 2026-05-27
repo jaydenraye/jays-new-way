@@ -2,8 +2,8 @@ const { createClient } = require('@supabase/supabase-js');
 
 // ─── CONFIG ────────────────────────────────────────────────────────────────
 
-const MATCH_COUNT = 5;        // Number of document chunks to retrieve per query
-const MATCH_THRESHOLD = 0.45; // Minimum similarity score (0-1). Lower = more results.
+const MATCH_COUNT = 8;        // Number of document chunks to retrieve per query
+const MATCH_THRESHOLD = 0.2; // Minimum similarity score (0-1). Lower = more results.
 const MAX_CONTEXT_CHARS = 6000; // Max characters of retrieved context to inject
 
 // ─── HELPERS ───────────────────────────────────────────────────────────────
