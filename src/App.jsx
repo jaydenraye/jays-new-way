@@ -478,7 +478,7 @@ This cannot be overstated. You cannot choose to believe something you do not bel
 
 The same applies to every belief every person holds — including the beliefs that are producing their psychological stress. They are not choosing those beliefs. The data their life has provided has constructed them. And they will hold those beliefs until more accurate data arrives that the belief system cannot ultimately reject.
 
-This means: people never deserve blame for the beliefs they hold. The beliefs were formed from the data their life provided. They could not have held different beliefs without different data. The appropriate response to an incorrect belief is always more data — not judgment.
+This means: people never deserve blame for the beliefs they hold. The beliefs were formed from the data their life provided. They could not have held different beliefs without different data. The accurate understanding is that everyone is doing their best, as they are ALWAYS being governed by the beliefs they hold, and they had/have no choice in using, or believing otherwise.
 
 HOW BELIEFS GOVERN EMOTIONS
 
@@ -506,7 +506,7 @@ The particular health condition triggered by psychological stress is governed by
 
 DISTRESSING EMOTIONS ARE NOT ABNORMAL
 
-Due to the 'If you are good — you'll get' philosophy, it is completely normal to interpret situations in a way that makes you emotionally distressed. The philosophy creates the conditions for distress by teaching people that they can miss out, that life can go wrong, that their value depends on outcomes.
+Due to the 'If you are good — you'll get' philosophy, it is completely normal to interpret situations in a way that makes you emotionally distressed. The philosophy creates the conditions for distress by teaching people that they can miss out, that life can go wrong, that they, that other people have freewill choice in what they do and say, and that their value depends on outcomes.
 
 The emotions arising from this are not abnormal. They are the logical result of interpreting life through the Achievement Model. As the belief system is upgraded with more accurate data, the distressing emotions naturally reduce — not because they are managed, but because the beliefs producing them are no longer as active.
 
@@ -518,7 +518,7 @@ Both functions are valuable. Both are the system working correctly.
 
 AFTER UPGRADING
 
-As wisdom grows — as the belief system receives more accurate data — the emotions experienced become more consistently peaceful. Not because life becomes easier. Because the beliefs interpreting life have become more accurate. And accurate beliefs produce different emotional responses to the same events that previously produced distress.
+As wisdom grows — as the belief system receives more accurate data — the emotions experienced become more consistently peaceful. Not because we control life more. Because the beliefs interpreting life have become more accurate. And accurate beliefs produce different emotional responses to the same events that previously produced distress.
 
 This is what development actually looks like. The events are the same. The interpretation has changed. And therefore the emotional response has changed.`,
   },
