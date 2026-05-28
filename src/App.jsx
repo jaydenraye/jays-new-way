@@ -606,7 +606,7 @@ The first camp says: you knew. You had choice. You could have acted differently.
 
 The second camp says: you are here learning. You act from the beliefs you currently hold. You could not have acted differently given where you are in your development. There is no good versus evil — only people at their current level of understanding.
 
-These two camps produce completely different worlds. The first produces anger, guilt, regret, war, shame, and the morning question. The second produces something else entirely.
+These two camps produce completely different worlds. The first produces anger, guilt, regret, war, shame, and the morning question. The second produces peace of mind, unwavering sense of value, appreciation and joy.
 
 What separates them is one concept: free will.
 
@@ -642,9 +642,9 @@ Every person at every moment acts from the beliefs and priorities they hold at t
 
 Anger requires the belief that someone chose to act as they did. When it is clearly understood that no person chose — that every action was the product of a belief system responding to incoming data — the premise of sustained anger dissolves.
 
-Guilt requires the belief that you could have chosen to act differently. But you were reasoning from the beliefs you held at that precise moment. Given those beliefs, the action that occurred was the only action possible. The appropriate response is never punishment. It is the data the experience provides — which updates the belief system so the reasoning available next time is more accurate.
+Guilt requires the belief that you could have chosen to act differently. But you were reasoning from the beliefs you held at that precise moment. Given those beliefs, the action that occurred was the only action possible. The appropriate response is never punishment. It is the data the experience provides — which can help to update the belief system so the reasoning available next time is more accurate.
 
-At the seat of all psychological stress — all anger, all guilt, all regret, every war, every suicide — you will always find the concept of free will. All of that difficulty produced by the one thing society believes in most.`,
+At the seat of all psychological stress — all anger, all guilt, all regret, every war, every suicide — you will always find the concept of free will. All of that difficulty and mental anguish, produced by the one thing society believes in most.`,
   },
   {
     id: 7,
