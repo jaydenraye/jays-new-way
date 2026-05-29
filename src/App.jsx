@@ -600,33 +600,23 @@ This is not fate in the sense of an external plan. It is the natural consequence
     category: "Core Concepts",
     duration: "10 min",
     summary: "The concept that sits at the foundation of all anger, guilt, regret, and blame — and why it cannot logically coexist with cause and effect.",
-    content: `There are two camps that have existed in human thinking for as long as anyone has been writing anything down. The "you knew" camp, and the "you are learning" camp.
+    content: `At the core of all psychological stress you will find the concept of 'free-will'. A concept taught for centuries by Eastern and Western philosophies.
 
-The first camp claims decision making is a process of 'Free-Will': You either pick correctly or incorrectly using your power of 'free-will'. This apparent power of 'choice' can take you down the 'right path' in life, filled with peace and happiness, which proves your worth to others so you can receive what you need to thrive & survive. But, make the wrong 'choices' and your life will be filled with obstacles, stress, and failure, making you unworthy of love from others, and hence unworthy to receive your needs.
+The biggest contradiction of all time is the concept of 'Free-Will': It refers to the possibility of you having an innate ability to have a choice in how you interpret and respond to life situations. Regardless of your beliefs, you can choose what to think, and how to respond. It declares that nothing is governing your decisions. 
 
-The 'you knew' camp uses the false concept of 'free-will' to make sure you do as you're told. It punishes you by claiming you 'chose' the wrong path. Promotes the fear of 'missing out'. Tells you to feel guilt, regret and shame. Insists on your perfection, claiming it already exists within, you just need to make 'right choices'. It divides people into 'good' or 'evil' based on how they use their 'free-will'. 
+Consider the following exercise: You're shown two boxes. Box A and B. You're told to use your 'power of choice' to pick a box. You pick box A. Instantly you are told off, and that you had 'free-will' and could've picked box B. You apologise, and try again. With your second attempt you pick box A again. You are told off again, for not picking box B.
 
-The second camp states there is no such thing as 'decision making': A decision depends on there being available options. Yet, due to how belief system works, your response is always governed by reasoning. Reasons govern our choices, and lack of reasons makes them random. Either way, freedom to choose is an illusion. This understanding means there is no good versus evil — only people at their current level of understanding.
+After considering the situation, you ask the person who is telling you off, "What makes you think that because I have 'choice' (free-will) I would pick box B. They reply "Because box B is better, it's correct". You then state, "So, what you are really saying is 'free-will' makes you pick correctly. It's supposed to control (govern) your decisions". 
 
-The 'you are learning' camp explains correctly how you respond to different events in life. It shows you that you couldn't have chosen differently, and that everyone is having the events in life they are meant to have. It explains the impossibility of life unfolding any differently than it did, due to everyone's actions being the result of their beliefs at the time. All psychological stress comes from incorrect interpretations about life, not being on a 'wrong path' of events.
+Whenever someone claims that one factor is better or more correct than another, this claim must be reason based. Which in turn means 'free-will' makes you choose a particular factor for particular reasons. However' when you ask people what 'free-will' actually means, it is defined to mean we have the power of not being governed. 
 
-These two camps produce completely different worlds. The first produces anger, guilt, regret, war, shame, and the morning 'prove myself' question. The second produces peace of mind, unwavering sense of value, appreciation and joy.
+Can you see the obvious contradiction?
 
-The concept which seperates the two camps is free will.
+Let's do another exercise: Roll a pen across the floor, and note where it stops. Q: How did the pen stop where it did? A: It stopped there due to the influence of all the factors involved. Q: Why didn't the pen stop in a different spot? A: Same reason as the first answer. The influence of all the factors involved. 
 
-FREE WILL CONTRADICTS ITSELF
+This exercise highlights the fact that whatever governed how particular circumstances unfolded, these factors also governed why such circumstances could not have unfolded any other way. Q: Can anything occur without something having caused it? A: Of course not!
 
-Free will, in the way it is most commonly used, makes a specific claim: that your mind is not governed by anything. That you can simply choose your beliefs and your actions regardless of your conditioning, history, and development.
-
-But here is the contradiction. When someone says "you had a choice — you should have acted differently," what are they actually saying? They are saying you should have reasoned better. For something to be declared better or more correct, there must be reasons why it is better. And the moment you introduce reasons, you have introduced governing. You have admitted that decisions are based on reasoning — which means governed by beliefs — which means not free.
-
-The free will concept simultaneously declares you are ungoverned and that you should have acted more correctly. These two positions cannot coexist. The concept destroys itself the moment it is examined. Saying you "should" have made a different choice is mathematically and physically identical to saying, "It rained yesterday, but the clouds should have behaved differently." It is a literal denial of the physical facts of history. It is a lie, based on a lie.
-
-CAUSE AND EFFECT — THE ACCURATE ACCOUNT
-
-Life is governed by cause and effect. Every event is the product of all events that preceded it. Every decision you make is the product of the beliefs and priorities you hold at that specific moment in your development. Given those beliefs, given that moment, given everything that constructed the belief system up to that point — no different action was possible.
-
-This is not a soft position. It is a logical one. You cannot choose to believe something you do not believe. You cannot act in a way that contradicts your highest priority belief at the moment of action. Every action every person has ever taken was the only action their belief system at that moment could produce.
+This is the how the law of cause and effect works, and is an accepted unquestionable law of nature, until you introduce the concept of 'free-will". Why should we believe the 'decision making process' can run by a different set of principles than the law of 'Cause and Effect' which the entire universe runs by!
 
 THE TWO QUESTIONS
 
