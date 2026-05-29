@@ -600,27 +600,31 @@ This is not fate in the sense of an external plan. It is the natural consequence
     category: "Core Concepts",
     duration: "10 min",
     summary: "The concept that sits at the foundation of all anger, guilt, regret, and blame — and why it cannot logically coexist with cause and effect.",
-    content: `There are two camps that have existed in human thinking for as long as anyone has been writing anything down.
+    content: `There are two camps that have existed in human thinking for as long as anyone has been writing anything down. The "you knew" camp, and the "you are learning" camp.
 
-The first camp says: you knew. You had choice. You could have acted differently. You are either good or you are not — and if you are not, it is because you chose not to be.
+The first camp claims decision making is a process of 'Free-Will': You either pick correctly or incorrectly using your power of 'free-will'. This apparent power of 'choice' can take you down the 'right path' in life, filled with peace and happiness, which proves your worth to others so you can receive what you need to thrive & survive. But, make the wrong 'choices' and your life will be filled with obstacles, stress, and failure, making you unworthy of love from others, and hence unworthy to receive your needs.
 
-The second camp says: you are here learning. You act from the beliefs you currently hold. You could not have acted differently given where you are in your development. There is no good versus evil — only people at their current level of understanding.
+The 'you knew' camp uses the false concept of 'free-will' to make sure you do as you're told. It punishes you by claiming you 'chose' the wrong path. Promotes the fear of 'missing out'. Tells you to feel guilt, regret and shame. Insists on your perfection, claiming it already exists within, you just need to make 'right choices'. It divides people into 'good' or 'evil' based on how they use their 'free-will'. 
 
-These two camps produce completely different worlds. The first produces anger, guilt, regret, war, shame, and the morning question. The second produces peace of mind, unwavering sense of value, appreciation and joy.
+The second camp states there is no such thing as 'decision making': A decision depends on there being available options. Yet, due to how belief system works, your response is always governed by reasoning. Reasons govern our choices, and lack of reasons makes them random. Either way, freedom to choose is an illusion. This understanding means there is no good versus evil — only people at their current level of understanding.
 
-What separates them is one concept: free will.
+The 'you are learning' camp explains correctly how you respond to different events in life. It shows you that you couldn't have chosen differently, and that everyone is having the events in life they are meant to have. It explains the impossibility of life unfolding any differently than it did, due to everyone's actions being the result of their beliefs at the time. All psychological stress comes from incorrect interpretations about life, not being on a 'wrong path' of events.
+
+These two camps produce completely different worlds. The first produces anger, guilt, regret, war, shame, and the morning 'prove myself' question. The second produces peace of mind, unwavering sense of value, appreciation and joy.
+
+The concept which seperates the two camps is free will.
 
 FREE WILL CONTRADICTS ITSELF
 
-Free will, in the way it is most commonly used, makes a specific claim: that people's minds are not governed by anything. That a person can simply choose their beliefs and their actions regardless of their conditioning, their history, their development.
+Free will, in the way it is most commonly used, makes a specific claim: that your mind is not governed by anything. That you can simply choose your beliefs and your actions regardless of your conditioning, history, and development.
 
 But here is the contradiction. When someone says "you had a choice — you should have acted differently," what are they actually saying? They are saying you should have reasoned better. For something to be declared better or more correct, there must be reasons why it is better. And the moment you introduce reasons, you have introduced governing. You have admitted that decisions are based on reasoning — which means governed by beliefs — which means not free.
 
-The free will concept simultaneously declares people are ungoverned and that they should have acted more correctly. These two positions cannot coexist. The concept destroys itself the moment it is examined.
+The free will concept simultaneously declares you are ungoverned and that you should have acted more correctly. These two positions cannot coexist. The concept destroys itself the moment it is examined. Saying you "should" have made a different choice is mathematically and physically identical to saying, "It rained yesterday, but the clouds should have behaved differently." It is a literal denial of the physical facts of history. It is a lie, based on a lie.
 
 CAUSE AND EFFECT — THE ACCURATE ACCOUNT
 
-Life is governed by cause and effect. Every event is the product of all events that preceded it. Every decision a person makes is the product of the beliefs and priorities they hold at that specific moment in their development. Given those beliefs, given that moment, given everything that constructed the belief system up to that point — no different action was possible.
+Life is governed by cause and effect. Every event is the product of all events that preceded it. Every decision you make is the product of the beliefs and priorities you hold at that specific moment in your development. Given those beliefs, given that moment, given everything that constructed the belief system up to that point — no different action was possible.
 
 This is not a soft position. It is a logical one. You cannot choose to believe something you do not believe. You cannot act in a way that contradicts your highest priority belief at the moment of action. Every action every person has ever taken was the only action their belief system at that moment could produce.
 
@@ -642,7 +646,7 @@ Every person at every moment acts from the beliefs and priorities they hold at t
 
 Anger requires the belief that someone chose to act as they did. When it is clearly understood that no person chose — that every action was the product of a belief system responding to incoming data — the premise of sustained anger dissolves.
 
-Guilt requires the belief that you could have chosen to act differently. But you were reasoning from the beliefs you held at that precise moment. Given those beliefs, the action that occurred was the only action possible. The appropriate response is never punishment. It is the data the experience provides — which can help to update the belief system so the reasoning available next time is more accurate.
+Guilt requires the belief that you could have chosen to act differently. But your mind was reasoning from the beliefs you held at that precise moment. Given those beliefs, the action that occurred was the only action possible. The accurate response is never punishment. It is understanding the event was part of yours, and others development — which can help to update beliefs associated with the event, so the reasoning available next time is more accurate.
 
 At the seat of all psychological stress — all anger, all guilt, all regret, every war, every suicide — you will always find the concept of free will. All of that difficulty and mental anguish, produced by the one thing society believes in most.`,
   },
