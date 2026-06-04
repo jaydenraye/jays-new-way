@@ -654,17 +654,19 @@ At the seat of all psychological stress — all anger, all guilt, all regret, ev
     summary: "What to expect when beliefs update — and why old thoughts will keep arriving even after a belief has genuinely changed.",
     content: `Beliefs do not change by deciding to believe something different. You cannot choose what you believe. You receive information that establishes the reasoning that forms the understandings that are your beliefs.
 
-Beliefs change when incoming data provides the reasoning capable of constructing a new understanding. Not by willpower. Not by deciding to think differently. By receiving accurate information that the belief system cannot ultimately reject.
+Beliefs change when incoming data provides the reasoning capable of constructing a new understanding. Not by willpower. Not by deciding to think differently. By receiving snippets of information which links to our current understandings of what we believe to be true about how things works in life.
 
-The brain is not a filter that accepts only what it wants to hear. It is a reasoning machine. When incoming data provides a clear enough logical chain — when the reasoning is sufficiently complete — the belief updates. It cannot hold indefinitely against sufficient accurate data. The belief will change. This is how development works.
+The brain is not a filter that accepts only what it wants to hear. It is a data collector, and neural network creator and modifier. It uses environmental data to add to, or alter, current understandings it already holds. If the incoming data proves to be true, by having a relationship with some particular understanding we already possess and believe to be true, a new belief can be formed, an old belief can be changed, or a current belief will be confirmed. This is how development works. 
+
+This doesn't mean all beliefs are true and accurate interpretations of reality. For this reason our mind/body system evolved to express signals of pain, and dis-ease to bring attention to, and assist our activity, in the development and survival process. This is also why stress, and dis-ease are a beneficial part of the belief changing process.   
 
 WHAT TO EXPECT WHEN BELIEFS CHANGE
 
 When a belief changes, old neurons do not disappear. The new understanding is built on top of the existing structure — new neural pathways form, new connections are made — but the old pathways remain. They can be triggered by association at any time.
 
-An old thought can surface — triggered by a word, a memory, a situation that connects to the old neural network. The old feeling follows the old thought. This is completely normal. It is not evidence that the belief has not changed. It is not relapse or failure. It is the brain working exactly as brains work.
+An old thought can surface during the interpretation process of an event, due to the extensive interconnectedness of our neural network, and the many understandings associated to a vast variety of events. The old feeling follows the old thought. This is completely normal. It is not evidence that the belief has not changed. It is not relapse or failure. It is the brain working exactly as brains work.
 
-The people who appear to have achieved complete peace of mind are not people who never have incorrect thoughts. They are people who have added enough accurate data to their belief system that, when old thoughts arise, the new understanding meets them so quickly through conscious analysis and reflection that the old thought barely registers before it has been addressed. They are not controlling their mind. They are reasoning from a more accurate belief system.
+The people who have more ongoing peace of mind are not people who never have incorrect thoughts. They are people who have received sufficient accurate data (wisdom) to their belief system, which has built more interconnected neurons of wisdom to reason with, and interpret reality with. They are not controlling their mind. They are reasoning from a more accurate belief system.
 
 APPLYING NEW UNDERSTANDING
 
